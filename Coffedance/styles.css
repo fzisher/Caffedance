@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Moirai+One&family=Padyakke+Expanded+One&family=Poiret+One&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Padyakke Expanded One', sans-serif;
+    color: #fff;
+    background: linear-gradient(#F4EBDC,#C39366,#8A6D53);
+}
+a {
+    color: #FFE3A7;
+    font-family: 'Modak', sans-serif;
+    text-decoration: none; 
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1121px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h1 {
+    font-weight: 500;
+    margin: 0;
+    font-size: 80px;
+}
+@keyframes anima {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+/* head */
+.header .container{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.header {
+    padding: 25px 0;
+    animation: anima 4s forwards;
+}
+.header_list{
+    display: flex;
+    gap: 100px;
+    font-size: 30px;
+    color:#FFE3A7 ;
+}
+.active {
+    color:#000000 ;
+}
+.header_list a:hover{
+    opacity: 0.7;
+}
+/*oppening*/
+.welcom_s{
+    margin-top: -100px;
+    margin-bottom: 80px;
+    padding: 340px 0;
+    background-image: url("./images/picture1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Modak', sans-serif;
+    font-size: 80px;
+}
+.welcom_s .container{
+    width: 538px;
+    animation: anima 4s forwards;
+}
+.welcom_name{
+    position: relative;
+    top:114px;
+    left: 10px;
+    display: flex;
+    justify-content:center; 
+    padding: 0; 
+}
+.back_welcom{
+    font-family: 'Moirai One', sans-serif;
+    display: flex;
+    justify-content:center;
+    font-size: 75px;
+}
+.welcom_desk{
+    font-family: 'Padyakke Expanded One', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    display: flex;
+    justify-content:center; 
+}
+/*place*/
+.place{
+    display: flexbox;
+    justify-content:center;
+    margin: auto;
+    animation: anima 4s forwards;
+}
+.place_desc{
+    margin-top: 80px;
+    margin-bottom: 0px;
+    font-family: 'Poiret One',sans-serif;
+    color: #3F2005;
+    font-size: 24px;
+}
+.place_desc::first-letter{
+    font-size: 50px;
+    color: #532B07;
+    font-family: 'Moirai One', sans-serif;
+}
+.place_photo{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 56px;
+    margin-top: 40px;
+}
+/*about us*/
+.about_us{    
+    animation: anima 4s forwards;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    column-gap: 120px;
+    margin-top: 120px;
+}
+/*products*/
+.products .container{
+    animation: anima 4s forwards;
+    flex-wrap: wrap;
+    gap: 66px;
+}
+.category{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.category_name{
+    font-family: 'Modak', sans-serif;
+    color: #B06927;
+    font-size: 35px;
+    margin-top:48px;
+    margin-bottom: 20px;
+}
+.category_first_name{
+    font-family: 'Modak', sans-serif;
+    color: #B06927;
+    font-size: 35px;
+    margin-top: 120px;    
+    margin-bottom: 20px;
+}
+.product_example{
+    font-family: 'Poiret One',sans-serif;
+    color: #3F2005;
+    width: 227px;
+    text-align: center;
+}
+.product_title{
+    font-size: 20px;
+    display: flexbox;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+.product_price{
+    font-size: 20px;
+    font-family: 'Modak', sans-serif;
+    color: #B06927;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.product_desc{
+    font-size: 16px;
+    margin-top: 12px;    
+    margin-bottom: 0;
+}
+/*stokss*/
+.stocks .container{
+    animation: anima 4s forwards;
+    margin-top:120px ;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    grid-template-areas: "fi fi s s s t t t"
+                         "fi fi s s s t t t"
+                         "fi fi s s s t t t"
+                         "fi fi f f f f f f"
+                         "fi fi f f f f f f";
+    column-gap: 16px;
+    row-gap: 16px;
+}
+.stock1{
+    grid-area: fi;
+}
+.stock2{
+    grid-area: s;    
+}
+.stock3{
+    grid-area: t;
+}
+.stock4{
+    grid-area: f;
+}
+/*contact*/
+.contact{
+    animation: anima 4s forwards;
+    display: flexbox;
+    justify-content:center;
+    align-items: center;
+}
+.adress_name{
+    font-family: 'Padyakke Expanded One', sans-serif;
+    font-size: 50px;
+    margin-top: 120px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.work_time_title{
+    font-family: 'Modak', sans-serif;
+    font-size: 50px;
+    margin-top: 120px;
+    text-align: center;
+    margin-bottom: 0;
+}
+.work_time{
+    font-family: 'Poiret One',sans-serif;
+    font-size:50px ;
+    text-align: center;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+/*back menu*/
+.back {
+    animation: anima 2s forwards;
+    background-color:#532B07 ;
+    margin-top: 80px;
+}
+.back .container{
+    padding-top: 94px;
+    padding-bottom: 70px;
+}
+.contact_title{
+    font-family: 'Modak', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+.contact_info{
+    font-family: 'Poiret One',sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center;
+}
+.icons{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 30px;
+}
